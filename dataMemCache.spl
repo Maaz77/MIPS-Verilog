@@ -1,0 +1,13 @@
+[Inputs]
+clk
+MemRead
+MemWrite
+=mem[127:0]=
+=address[31:0]=
+[Outputs]
+hit
+=readdata[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel dataMemCache
+

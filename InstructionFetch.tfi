@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+InstructionFetch instance_name (
+    .clk(clk), 
+    .pcSrc(pcSrc), 
+    .branchAddr(branchAddr), 
+    .rst(rst), 
+    .insMem(insMem)
+    );
+
+

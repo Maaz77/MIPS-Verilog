@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1670" delta="old" >"D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\fetch_cach.v" Line 37: Signal &lt;<arg fmt="%s" index="1">insMem</arg>&gt; in initial block is partially initialized.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\fetch_cach.v" Line 124: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\fetch_cach.v" Line 73: Result of <arg fmt="%d" index="1">31</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">30</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\IF_ID.v" Line 31: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">30</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\decode1.v" Line 57: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">30</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\MIPS.v" Line 111: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">regWrite</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">2</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\execution.v" Line 112: Signal &lt;<arg fmt="%s" index="1">readData1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\execution.v" Line 116: Signal &lt;<arg fmt="%s" index="1">readData1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\execution.v" Line 120: Signal &lt;<arg fmt="%s" index="1">readData1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\execution.v" Line 124: Signal &lt;<arg fmt="%s" index="1">readData1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\execution.v" Line 128: Signal &lt;<arg fmt="%s" index="1">readData1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\execution.v" Line 130: Signal &lt;<arg fmt="%s" index="1">aluOp</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\MIPS.v" Line 193: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">add_result</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">30</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1670" delta="old" >"D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\memoryCache.v" Line 40: Signal &lt;<arg fmt="%s" index="1">data_mem</arg>&gt; in initial block is partially initialized.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\memoryCache.v" Line 110: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\MIPS.v</arg>&quot; line <arg fmt="%d" index="2">84</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">instructionfetch</arg>&gt; of block &lt;<arg fmt="%s" index="4">InstructionFetch</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">MIPS</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\MIPS.v</arg>&quot; line <arg fmt="%d" index="2">95</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">if_id</arg>&gt; of block &lt;<arg fmt="%s" index="4">IF_ID</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">MIPS</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\MIPS.v</arg>&quot; line <arg fmt="%d" index="2">106</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Decode</arg>&gt; of block &lt;<arg fmt="%s" index="4">decode</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">MIPS</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\MIPS.v</arg>&quot; line <arg fmt="%d" index="2">121</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">control_unit</arg>&gt; of block &lt;<arg fmt="%s" index="4">controlUnit</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">MIPS</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\MIPS.v</arg>&quot; line <arg fmt="%d" index="2">136</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">id_ex</arg>&gt; of block &lt;<arg fmt="%s" index="4">ID_EX</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">MIPS</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\MIPS.v</arg>&quot; line <arg fmt="%d" index="2">161</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">execution</arg>&gt; of block &lt;<arg fmt="%s" index="4">execution</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">MIPS</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\MIPS.v</arg>&quot; line <arg fmt="%d" index="2">180</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">ex_mem</arg>&gt; of block &lt;<arg fmt="%s" index="4">EX_MEM</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">MIPS</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\MIPS.v</arg>&quot; line <arg fmt="%d" index="2">201</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">memory</arg>&gt; of block &lt;<arg fmt="%s" index="4">memoryStage</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">MIPS</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\MIPS.v</arg>&quot; line <arg fmt="%d" index="2">217</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">memwb</arg>&gt; of block &lt;<arg fmt="%s" index="4">MEM_WB</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">MIPS</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\MIPS.v</arg>&quot; line <arg fmt="%d" index="2">234</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">wb</arg>&gt; of block &lt;<arg fmt="%s" index="4">WB</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">MIPS</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+</messages>
+

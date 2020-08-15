@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj Computer_arc -o D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/controlUnit.tfi -lib work D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc//controlUnit.v -module controlUnit -template D:/Compiler/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

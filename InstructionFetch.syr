@@ -1,0 +1,717 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.27 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.27 secs
+ 
+--> Reading design: InstructionFetch.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "InstructionFetch.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "InstructionFetch"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : InstructionFetch
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\fetch_cach.v" into library work
+Parsing module <InstructionFetch>.
+Parsing module <InstructionCache>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <InstructionFetch>.
+Reading initialization file \"insMem.mem\".
+WARNING:HDLCompiler:1670 - "D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\fetch_cach.v" Line 37: Signal <insMem> in initial block is partially initialized.
+
+Elaborating module <InstructionCache>.
+WARNING:HDLCompiler:413 - "D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\fetch_cach.v" Line 124: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\fetch_cach.v" Line 61: Result of 32-bit expression is truncated to fit in 30-bit target.
+WARNING:HDLCompiler:413 - "D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\fetch_cach.v" Line 65: Result of 32-bit expression is truncated to fit in 30-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <InstructionFetch>.
+    Related source file is "D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\fetch_cach.v".
+WARNING:Xst:647 - Input <branchAddr<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <insMem> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <hit_clk_DFF_1271>.
+    Found 30-bit register for signal <pc>.
+    Found 32-bit register for signal <Z_1_o_dff_12_OUT>.
+    Found 32-bit adder for signal <n0057> created at line 44.
+    Found 32-bit adder for signal <n0058> created at line 44.
+    Found 32-bit adder for signal <n0059> created at line 44.
+    Found 31-bit adder for signal <n0074[30:0]> created at line 73.
+    Found 256x32-bit dual-port Read Only RAM <Mram_insMem> for signal <insMem>.
+    Found 1-bit tristate buffer for signal <ins<31>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<30>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<29>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<28>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<27>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<26>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<25>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<24>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<23>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<22>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<21>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<20>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<19>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<18>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<17>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<16>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<15>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<14>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<13>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<12>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<11>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<10>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<9>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<8>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<7>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<6>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<5>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<4>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<3>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<2>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<1>> created at line 54
+    Found 1-bit tristate buffer for signal <ins<0>> created at line 54
+    Summary:
+	inferred   2 RAM(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred  63 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred  32 Tristate(s).
+Unit <InstructionFetch> synthesized.
+
+Synthesizing Unit <InstructionCache>.
+    Related source file is "D:\3D\IDM\Downloads\Documents\prog\Verilog\Computer_arc\fetch_cach.v".
+    Found 32-bit register for signal <instruction>.
+    Found 1232-bit register for signal <n0055[1231:0]>.
+    Found 5-bit register for signal <counter>.
+    Found 1-bit register for signal <hit>.
+    Found 5-bit adder for signal <_n0095> created at line 124.
+    Found 1-bit 8-to-1 multiplexer for signal <address[4]_PWR_2_o_equal_4_o> created at line 110.
+    Found 25-bit 8-to-1 multiplexer for signal <address[4]_cache[7][152]_wide_mux_4_OUT> created at line 110.
+    Found 32-bit 8-to-1 multiplexer for signal <address[4]_cache[7][31]_wide_mux_6_OUT> created at line 115.
+    Found 32-bit 8-to-1 multiplexer for signal <address[4]_cache[7][63]_wide_mux_7_OUT> created at line 116.
+    Found 32-bit 8-to-1 multiplexer for signal <address[4]_cache[7][95]_wide_mux_8_OUT> created at line 117.
+    Found 32-bit 8-to-1 multiplexer for signal <address[4]_cache[7][127]_wide_mux_9_OUT> created at line 118.
+    Found 32-bit 4-to-1 multiplexer for signal <address[1]_address[4]_wide_mux_10_OUT> created at line 114.
+    Found 25-bit comparator equal for signal <address[4]_address[29]_equal_6_o> created at line 110
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 1270 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  31 Multiplexer(s).
+Unit <InstructionCache> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 256x32-bit dual-port Read Only RAM                    : 2
+# Adders/Subtractors                                   : 5
+ 31-bit adder                                          : 1
+ 32-bit adder                                          : 3
+ 5-bit adder                                           : 1
+# Registers                                            : 7
+ 1-bit register                                        : 2
+ 1232-bit register                                     : 1
+ 30-bit register                                       : 1
+ 32-bit register                                       : 2
+ 5-bit register                                        : 1
+# Comparators                                          : 1
+ 25-bit comparator equal                               : 1
+# Multiplexers                                         : 32
+ 1-bit 2-to-1 multiplexer                              : 8
+ 1-bit 8-to-1 multiplexer                              : 1
+ 128-bit 2-to-1 multiplexer                            : 8
+ 25-bit 2-to-1 multiplexer                             : 8
+ 25-bit 8-to-1 multiplexer                             : 1
+ 30-bit 2-to-1 multiplexer                             : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+ 32-bit 8-to-1 multiplexer                             : 4
+# Tristates                                            : 32
+ 1-bit tristate buffer                                 : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <InstructionCache>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <InstructionCache> synthesized (advanced).
+
+Synthesizing (advanced) Unit <InstructionFetch>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_insMem1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 32-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0059>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <mem>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 32-bit                   |          |
+    |     addrB          | connected to signal <(pc<7:2>,"00")> |          |
+    |     doB            | connected to signal <mem>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_insMem> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 32-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0057>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <mem>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 32-bit                   |          |
+    |     addrB          | connected to signal <n0058>         |          |
+    |     doB            | connected to signal <mem>           |          |
+    -----------------------------------------------------------------------
+Unit <InstructionFetch> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 256x32-bit dual-port distributed Read Only RAM        : 2
+# Adders/Subtractors                                   : 5
+ 31-bit adder                                          : 1
+ 5-bit adder                                           : 1
+ 8-bit adder                                           : 3
+# Counters                                             : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 1328
+ Flip-Flops                                            : 1328
+# Comparators                                          : 1
+ 25-bit comparator equal                               : 1
+# Multiplexers                                         : 32
+ 1-bit 2-to-1 multiplexer                              : 8
+ 1-bit 8-to-1 multiplexer                              : 1
+ 128-bit 2-to-1 multiplexer                            : 8
+ 25-bit 2-to-1 multiplexer                             : 8
+ 25-bit 8-to-1 multiplexer                             : 1
+ 30-bit 2-to-1 multiplexer                             : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+ 32-bit 8-to-1 multiplexer                             : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <InstructionFetch> ...
+
+Optimizing unit <InstructionCache> ...
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem11> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem13> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem14> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem15> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem16> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem17> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem18> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem19> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem110> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem111> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem112> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem113> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem114> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem115> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem116> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem117> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem118> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem119> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem120> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem121> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem122> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem123> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem124> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem125> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem126> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem127> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem128> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem129> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem130> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem131> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem132> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem133> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem134> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem135> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem136> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem137> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem138> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem139> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem140> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem141> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem142> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem143> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem144> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem145> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem146> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem147> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem148> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem149> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem150> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem151> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem152> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem153> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem154> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem155> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem156> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem157> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem158> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem159> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem160> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem161> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem162> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem163> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem12>, <Mram_insMem164> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem165> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem3> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem4> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem5> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem6> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem7> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem8> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem9> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem10> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem20> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem21> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem22> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem23> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem24> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem25> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem26> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem27> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem28> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem29> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem30> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem31> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem32> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem33> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem34> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem35> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem36> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem37> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem38> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem39> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem40> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem41> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem42> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem43> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem44> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem45> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem46> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem47> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem48> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem49> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem50> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem51> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem52> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem53> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem54> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem55> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem56> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem57> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem58> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem59> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem60> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem61> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem62> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem63> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem64> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem65> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem66> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem67> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem68> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem69> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem70> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem71> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem72> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_insMem2>, <Mram_insMem73> are equivalent, second RAM is removed
+((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0058<7> * N137) + (!n0058<7> * N137))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((n0057<7> * N136) + (!n0057<7> * N136))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((pc<7> * N7) + (!pc<7> * N7))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))((n0059<7> * N6) + (!n0059<7> * N6))
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block InstructionFetch, actual ratio is 3.
+FlipFlop pc_2 has been replicated 4 time(s)
+FlipFlop pc_3 has been replicated 4 time(s)
+FlipFlop pc_4 has been replicated 3 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1344
+ Flip-Flops                                            : 1344
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : InstructionFetch.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1922
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 29
+#      LUT2                        : 2
+#      LUT3                        : 41
+#      LUT4                        : 34
+#      LUT5                        : 609
+#      LUT6                        : 978
+#      MUXCY                       : 41
+#      MUXF7                       : 153
+#      VCC                         : 1
+#      XORCY                       : 30
+# FlipFlops/Latches                : 1344
+#      FD                          : 38
+#      FD_1                        : 615
+#      FDE                         : 41
+#      FDE_1                       : 618
+#      FDR_1                       : 32
+# RAMS                             : 2
+#      RAM128X1D                   : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 98
+#      IBUF                        : 33
+#      OBUF                        : 33
+#      OBUFT                       : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1344  out of  126800     1%  
+ Number of Slice LUTs:                 1704  out of  63400     2%  
+    Number used as Logic:              1696  out of  63400     2%  
+    Number used as Memory:                8  out of  19000     0%  
+       Number used as RAM:                8
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1743
+   Number with an unused Flip Flop:     399  out of   1743    22%  
+   Number with an unused LUT:            39  out of   1743     2%  
+   Number of fully used LUT-FF pairs:  1305  out of   1743    74%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                         101
+ Number of bonded IOBs:                  99  out of    210    47%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1344  |
+N0                                 | NONE(Mram_insMem2)     | 2     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 6.360ns (Maximum Frequency: 157.243MHz)
+   Minimum input arrival time before clock: 2.005ns
+   Maximum output required time after clock: 2.548ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.360ns (frequency: 157.243MHz)
+  Total number of paths / destination ports: 480801 / 2003
+-------------------------------------------------------------------------
+Delay:               3.180ns (Levels of Logic = 15)
+  Source:            pc_2_1 (FF)
+  Destination:       instance_name/cache_0_1230 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk falling
+
+  Data Path: pc_2_1 to instance_name/cache_0_1230
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              8   0.361   0.411  pc_2_1 (pc_2_1)
+     LUT6:I4->O            1   0.097   0.000  instance_name/Mmux_address[4]_cache[7][152]_wide_mux_4_OUT_317 (instance_name/Mmux_address[4]_cache[7][152]_wide_mux_4_OUT_317)
+     MUXF7:I1->O           1   0.279   0.511  instance_name/Mmux_address[4]_cache[7][152]_wide_mux_4_OUT_2_f7_16 (instance_name/address[4]_cache[7][152]_wide_mux_4_OUT<2>)
+     LUT6:I3->O            1   0.097   0.000  instance_name/Mcompar_address[4]_address[29]_equal_6_o_lut<0> (instance_name/Mcompar_address[4]_address[29]_equal_6_o_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  instance_name/Mcompar_address[4]_address[29]_equal_6_o_cy<0> (instance_name/Mcompar_address[4]_address[29]_equal_6_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  instance_name/Mcompar_address[4]_address[29]_equal_6_o_cy<1> (instance_name/Mcompar_address[4]_address[29]_equal_6_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  instance_name/Mcompar_address[4]_address[29]_equal_6_o_cy<2> (instance_name/Mcompar_address[4]_address[29]_equal_6_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  instance_name/Mcompar_address[4]_address[29]_equal_6_o_cy<3> (instance_name/Mcompar_address[4]_address[29]_equal_6_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  instance_name/Mcompar_address[4]_address[29]_equal_6_o_cy<4> (instance_name/Mcompar_address[4]_address[29]_equal_6_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  instance_name/Mcompar_address[4]_address[29]_equal_6_o_cy<5> (instance_name/Mcompar_address[4]_address[29]_equal_6_o_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  instance_name/Mcompar_address[4]_address[29]_equal_6_o_cy<6> (instance_name/Mcompar_address[4]_address[29]_equal_6_o_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  instance_name/Mcompar_address[4]_address[29]_equal_6_o_cy<7> (instance_name/Mcompar_address[4]_address[29]_equal_6_o_cy<7>)
+     MUXCY:CI->O          47   0.023   0.000  instance_name/Mcompar_address[4]_address[29]_equal_6_o_cy<8> (instance_name/address[4]_address[29]_equal_6_o)
+     MUXCY:CI->O           1   0.023   0.000  instance_name/_n0107_inv11_cy (instance_name/address[4]_address[29]_equal_6_o_l1)
+     MUXCY:CI->O        1224   0.262   0.496  instance_name/_n0107_inv11_cy1 (instance_name/_n0107_inv)
+     LUT5:I4->O            1   0.097   0.000  instance_name/cache_0_1230_rstpot (instance_name/cache_0_1230_rstpot)
+     FD_1:D                    0.008          instance_name/cache_0_1230
+    ----------------------------------------
+    Total                      3.180ns (1.761ns logic, 1.419ns route)
+                                       (55.4% logic, 44.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2621 / 1971
+-------------------------------------------------------------------------
+Offset:              2.005ns (Levels of Logic = 4)
+  Source:            rst (PAD)
+  Destination:       instance_name/cache_0_1230 (FF)
+  Destination Clock: clk falling
+
+  Data Path: rst to instance_name/cache_0_1230
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1274   0.001   0.714  rst_IBUF (rst_IBUF)
+     LUT3:I0->O            1   0.097   0.000  instance_name/_n0107_inv11_lut (instance_name/_n0107_inv11_lut)
+     MUXCY:S->O         1224   0.592   0.496  instance_name/_n0107_inv11_cy1 (instance_name/_n0107_inv)
+     LUT5:I4->O            1   0.097   0.000  instance_name/cache_0_1230_rstpot (instance_name/cache_0_1230_rstpot)
+     FD_1:D                    0.008          instance_name/cache_0_1230
+    ----------------------------------------
+    Total                      2.005ns (0.795ns logic, 1.210ns route)
+                                       (39.7% logic, 60.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 560 / 64
+-------------------------------------------------------------------------
+Offset:              2.548ns (Levels of Logic = 30)
+  Source:            pc_2 (FF)
+  Destination:       adderOutput<29> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: pc_2 to adderOutput<29>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q            896   0.361   0.486  pc_2 (pc_2)
+     LUT1:I0->O            1   0.097   0.000  Madd_n0074[30:0]_cy<2>_rt (Madd_n0074[30:0]_cy<2>_rt)
+     MUXCY:S->O            1   0.353   0.000  Madd_n0074[30:0]_cy<2> (Madd_n0074[30:0]_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<3> (Madd_n0074[30:0]_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<4> (Madd_n0074[30:0]_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<5> (Madd_n0074[30:0]_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<6> (Madd_n0074[30:0]_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<7> (Madd_n0074[30:0]_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<8> (Madd_n0074[30:0]_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<9> (Madd_n0074[30:0]_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<10> (Madd_n0074[30:0]_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<11> (Madd_n0074[30:0]_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<12> (Madd_n0074[30:0]_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<13> (Madd_n0074[30:0]_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<14> (Madd_n0074[30:0]_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<15> (Madd_n0074[30:0]_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<16> (Madd_n0074[30:0]_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<17> (Madd_n0074[30:0]_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<18> (Madd_n0074[30:0]_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<19> (Madd_n0074[30:0]_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<20> (Madd_n0074[30:0]_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<21> (Madd_n0074[30:0]_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<22> (Madd_n0074[30:0]_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<23> (Madd_n0074[30:0]_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<24> (Madd_n0074[30:0]_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<25> (Madd_n0074[30:0]_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<26> (Madd_n0074[30:0]_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<27> (Madd_n0074[30:0]_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0074[30:0]_cy<28> (Madd_n0074[30:0]_cy<28>)
+     XORCY:CI->O           2   0.370   0.283  Madd_n0074[30:0]_xor<29> (adderOutput_29_OBUF)
+     OBUF:I->O                 0.000          adderOutput_29_OBUF (adderOutput<29>)
+    ----------------------------------------
+    Total                      2.548ns (1.779ns logic, 0.769ns route)
+                                       (69.8% logic, 30.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock N0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    0.831|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+N0             |         |         |    2.433|         |
+clk            |    2.753|    1.327|    3.469|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 23.00 secs
+Total CPU time to Xst completion: 23.63 secs
+ 
+--> 
+
+Total memory usage is 4727752 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :  129 (   0 filtered)
+

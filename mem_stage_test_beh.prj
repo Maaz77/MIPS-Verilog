@@ -1,0 +1,3 @@
+verilog work "memoryCache.v"
+verilog work "mem_stage_test.v"
+verilog work "D:/Compiler/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

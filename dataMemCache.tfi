@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+dataMemCache instance_name (
+    .mem(mem), 
+    .clk(clk), 
+    .MemRead(MemRead), 
+    .MemWrite(MemWrite), 
+    .address(address), 
+    .hit(hit), 
+    .readdata(readdata)
+    );
+
+

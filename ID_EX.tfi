@@ -1,0 +1,28 @@
+
+
+
+// Instantiate the module
+ID_EX instance_name (
+    .clk(clk), 
+    .data_hit(data_hit), 
+    .ctlwb_out(ctlwb_out), 
+    .ctlm_out(ctlm_out), 
+    .ctlex_out(ctlex_out), 
+    .npc(npc), 
+    .readdata1(readdata1), 
+    .readdata2(readdata2), 
+    .signex_out(signex_out), 
+    .instr_2016(instr_2016), 
+    .instr_1511(instr_1511), 
+    .wb_ctlout(wb_ctlout), 
+    .m_ctlout(m_ctlout), 
+    .ex_ctlout(ex_ctlout), 
+    .npcout(npcout), 
+    .rdata1out(rdata1out), 
+    .rdata2out(rdata2out), 
+    .s_extendout(s_extendout), 
+    .instrout_2016(instrout_2016), 
+    .instrout_1511(instrout_1511)
+    );
+
+

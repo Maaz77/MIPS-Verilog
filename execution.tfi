@@ -1,0 +1,22 @@
+
+
+
+// Instantiate the module
+execution instance_name (
+    .clk(clk), 
+    .aluOp(aluOp), 
+    .aluSrc(aluSrc), 
+    .regDst(regDst), 
+    .readData1(readData1), 
+    .readData2(readData2), 
+    .dstReg1(dstReg1), 
+    .dstReg2(dstReg2), 
+    .pc(pc), 
+    .signExt(signExt), 
+    .zero(zero), 
+    .branchdst(branchdst), 
+    .aluRes(aluRes), 
+    .destReg(destReg)
+    );
+
+

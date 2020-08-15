@@ -1,0 +1,78 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS_Test_isim_beh.exe" -prj "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS_Test_beh.prj" "work.MIPS_Test" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/WB.v" into library work
+Analyzing Verilog file "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MEM_WB.v" into library work
+Analyzing Verilog file "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/memoryCache.v" into library work
+Analyzing Verilog file "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/IF_ID.v" into library work
+Analyzing Verilog file "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/ID_EX.v" into library work
+Analyzing Verilog file "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/fetch_cach.v" into library work
+Analyzing Verilog file "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/EX_MEM.v" into library work
+Analyzing Verilog file "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/execution.v" into library work
+Analyzing Verilog file "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/decode1.v" into library work
+Analyzing Verilog file "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/controlUnit.v" into library work
+Analyzing Verilog file "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" into library work
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 43: <ifid_in_instr> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 44: <ifid_in_pc> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 57: <ifid_out_instr> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 58: <ifid_out_pc> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 74: <idex_in_readData1> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 75: <idex_in_readData2> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 76: <idex_in_insAddress1> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 77: <idex_in_insAddress2> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 78: <idex_in_signExt> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 95: <RegDst> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 121: <idex_out_wb_ctlout> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 122: <idex_out_m_ctlout> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 123: <idex_out_ex_ctlout> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 124: <idex_out_pc> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 125: <idex_out_readData1> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 126: <idex_out_readData2> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 127: <idex_out_signExt> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 128: <idex_out_insAddr_2016> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 129: <idex_out_insAddr_1511> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 149: <exmem_in_zero> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 150: <exmem_in_branchAddr> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 151: <exmem_in_aluRes> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 152: <exmem_in_destReg> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 174: <exmem_out_zero> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 175: <exmem_out_branchAddr> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 176: <exmem_out_aluRes> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 177: <exmem_out_destReg> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 178: <exmem_out_wb_ctlout> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 179: <exmem_out_m_ctlout> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 180: <exmem_out_readData2> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 196: <memwb_in_aluRes> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 197: <memwb_in_readdata> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 212: <memwb_out_wb_ctlout> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 213: <memwb_out_aluRes> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 214: <memwb_out_readdata> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 215: <memwb_out_destReg> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS.v" Line 224: <wb_out_res> is already implicitly declared earlier.
+Analyzing Verilog file "D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS_Test.v" into library work
+Analyzing Verilog file "D:/Compiler/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module InstructionCache
+Compiling module InstructionFetch
+Compiling module IF_ID
+Compiling module decode
+Compiling module controlUnit
+Compiling module ID_EX
+Compiling module execution
+Compiling module EX_MEM
+Compiling module dataMemCache
+Compiling module memoryStage
+Compiling module MEM_WB
+Compiling module WB
+Compiling module MIPS
+Compiling module MIPS_Test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 15 Verilog Units
+Built simulation executable D:/3D/IDM/Downloads/Documents/prog/Verilog/Computer_arc/MIPS_Test_isim_beh.exe
+Fuse Memory Usage: 29048 KB
+Fuse CPU Usage: 936 ms

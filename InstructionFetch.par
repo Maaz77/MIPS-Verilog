@@ -1,0 +1,11 @@
+Release 14.7 par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+DESKTOP-PEDRAM::  Wed Dec 05 00:17:45 2018
+
+par -w -intstyle ise -ol high -mt off InstructionFetch_map.ncd
+InstructionFetch.ncd InstructionFetch.pcf 
+
+
+Constraints file: InstructionFetch.pcf.
+Loading device for application Rf_Device from file '7a100t.nph' in environment D:\Compiler\Xilinx\14.7\ISE_DS\ISE\.
